@@ -11,7 +11,8 @@ Server URL: `https://mcp.higgsfield.ai/mcp`
 2. Connect it in the app you're using:
 
 **Claude Code** (terminal or the desktop app's Code tab)
-- Run: `claude mcp add --transport http higgsfield https://mcp.higgsfield.ai/mcp`
+- Run: `claude mcp add --scope user --transport http higgsfield https://mcp.higgsfield.ai/mcp`
+  (`--scope user` makes it work in every folder, not just one project)
 - Then in a `claude` session run `/mcp`, pick `higgsfield`, and sign in
   in the browser.
 
