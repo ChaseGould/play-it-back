@@ -23,7 +23,11 @@ You need a [Claude](https://claude.ai) account.
 **2. Add it to Claude**
 
 In Claude, go to **Settings**, then **Capabilities**, then **Skills**.
-Click **Upload skill** and pick the file you just downloaded.
+Click **Upload skill** and pick the file you just downloaded. Make sure
+the skill is switched on.
+
+Don't see **Skills**? On the same Capabilities page, turn on **Code
+execution and file creation** first; skills need it.
 
 **3. Connect Higgsfield**
 
