@@ -37,16 +37,18 @@ a password or key into the chat.
 
 **4. Make something**
 
-Start a new chat, say what you're picturing (even roughly), and drop
-in whatever you've got: songs, photos, videos, voice memos, a logo.
-For example:
+Start a new chat and begin your message with **Use Play It Back**, so
+Claude knows to use the skill. Then say what you're picturing (even
+roughly) and drop in whatever you've got: songs, photos, videos, voice
+memos, a logo. For example:
 
-> Make a music video for this song. Moody, neon, kind of lonely.
+> Use Play It Back. Make a music video for this song. Moody, neon, kind
+> of lonely.
 
-> Here's a song and some photos of my car. I want something funny,
-> like a fake documentary about it.
+> Use Play It Back. Here's a song and some photos of my car. I want
+> something funny, like a fake documentary about it.
 
-> Help me make a 30 second ad for my coffee truck.
+> Use Play It Back. Help me make a 30 second ad for my coffee truck.
 
 If you just send files, Claude will ask what you have in mind first.
 Then it looks through everything, pitches a few ideas built on yours,
@@ -80,9 +82,9 @@ Only add Higgsfield from Higgsfield's own site or ChatGPT's directory.
 
 **4. Make something**
 
-Start a new chat and say what you want, the same way as in Claude. If
-it doesn't pick up the skill on its own, start with "Use the Play It
-Back skill" or type `@Higgsfield`.
+Start a new chat and begin your message with **Use Play It Back**,
+the same way as in Claude. Then say what you're picturing and add your
+files.
 
 **Two differences in ChatGPT:**
 - Higgsfield can't make voices in ChatGPT. Music videos and ads with
@@ -125,7 +127,8 @@ git clone https://github.com/ChaseGould/play-it-back ~/.claude/skills/play-it-ba
 ```bash
 claude mcp add --scope user --transport http higgsfield https://mcp.higgsfield.ai/mcp
 ```
-Then run `/mcp` in a session, pick `higgsfield`, and sign in. Claude
+Then run `/mcp` in a session, pick `higgsfield`, and sign in. Start a
+project with `/play-it-back` followed by what you're picturing. Claude
 Code runs each role as a subagent and does the final edit itself
 (needs ffmpeg).
 
