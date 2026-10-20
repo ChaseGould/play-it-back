@@ -19,7 +19,7 @@ trim, or change it.
 
 ## Stages
 - Voice: usually `n/a`.
-- Add a "rights" check at the interview (who made the song, on which
+- Add a "rights" check at kickoff (who made the song, on which
   service and plan; see `rights.md`). A free-plan AI song blocked one
   finished clip from shipping.
 - Decide lip sync per shot at stage 2. Default: avoid it with masks,

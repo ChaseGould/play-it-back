@@ -1,8 +1,9 @@
 # Play It Back
 
-Make a music video, an ad, a story video, or a cartoon by just telling
-Claude or ChatGPT what you want. It plans it with you, asks before
-spending anything, and shows you each step.
+Make a music video, an ad, a story video, or a cartoon with Claude or
+ChatGPT. Drop in your songs, photos, or videos, and it pitches ideas
+built from them, asks before spending anything, and shows you each
+step.
 
 You need a paid [Higgsfield](https://higgsfield.ai) plan with some
 credits. Higgsfield makes the pictures, voices, and video, on your own
@@ -36,16 +37,19 @@ a password or key into the chat.
 
 **4. Make something**
 
-Start a new chat and say what you want. Attach your song, photos, or
-logo if you have them. For example:
+Start a new chat and drop in whatever you've got: songs, photos,
+videos, voice memos, a logo, a few words. You don't need a plan. For
+example:
 
-> Make a music video for this song. Moody, neon, my character walking
-> through a city at night.
+> Here's my song and some photos of my car. What could we make?
+
+> Make a music video for this song. Moody, neon.
 
 > Help me make a 30 second ad for my coffee truck.
 
-Claude asks you some questions, asks how many credits you want to
-spend at most, and checks with you after every step.
+Claude looks through everything, pitches you a few ideas built from
+it, and asks only what it still needs, including how many credits
+you want to spend at most. Then it checks with you after every step.
 
 Menu names change sometimes. If a button isn't exactly where this says,
 look for the closest match.
@@ -82,8 +86,9 @@ Back skill" or type `@Higgsfield`.
 - Higgsfield can't make voices in ChatGPT. Music videos and ads with
   on-screen text work fine. For a narrated video, record the voiceover
   yourself on your phone and attach it, or use Claude.
-- To use your own photos or logo, ChatGPT will open a Higgsfield upload
-  window; add the files there instead of attaching them to the chat.
+- Attach your files to the chat so ChatGPT can look at them. When it's
+  time to use your photos or logo in the video, it will also open a
+  Higgsfield upload window; add them there too.
 
 **No Skills on your plan?** Make a **Project**, open the zip on your
 computer, paste the text of `SKILL.md` into the project's
@@ -135,4 +140,4 @@ and, for apps that can't run code, [references/no-code.md](references/no-code.md
 | Music video | Proven on two finished clips |
 | Character cartoon | Proven on a finished episode, includes kids rules |
 | Ad or promo | Untested, built from the others |
-| Custom | Built with you from the interview |
+| Custom | Built with you at kickoff |

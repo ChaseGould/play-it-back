@@ -14,7 +14,7 @@ action (3 to 5 s), then the product moment, then the hook in the first
 frame; with a jingle, use the music video beat-grid steps.
 
 ## Stages
-- Interview adds: the offer, the call to action, the target viewer,
+- Kickoff adds: the offer, the call to action, the target viewer,
   brand colors and fonts, logo files, required legal lines, and where it
   runs (each platform may need its own aspect and length).
 - Reference sheets for the product from real product photos. The

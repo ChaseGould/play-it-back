@@ -1,6 +1,6 @@
 # Role: director (stage 1, brief and look)
 
-Goal: turn the interview into a short bible the whole crew works from.
+Goal: turn the kickoff brief into a short bible the whole crew works from.
 Text only, no generations.
 
 Read: `brief.md`, the profile file, every supplied asset (look at photos,

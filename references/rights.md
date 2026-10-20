@@ -1,6 +1,6 @@
 # Rights check
 
-Do this at the interview, before any credits are spent. A blocked
+Do this at kickoff, before any credits are spent. A blocked
 asset found after the edit wastes the whole project (this happened: a
 finished music clip could not ship because the song was made on an AI
 music service's free plan, and upgrading later did not cover songs

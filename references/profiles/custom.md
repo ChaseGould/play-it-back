@@ -3,7 +3,7 @@
 For anything the other profiles don't fit: a lyric video, a birthday
 montage, a short film, a meme remix, a mix of formats.
 
-Build a profile with the user from the interview answers, write it to
+Build a profile with the user from the kickoff, write it to
 the project as `bible/profile.md`, and get their OK before stage 1. It
 needs only these sections:
 

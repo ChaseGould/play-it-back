@@ -14,5 +14,5 @@ can't run code, use these instead and tell the user what changes.
 | Measuring loudness, durations, pitch | Audio analysis | Use durations the generation tool reports; ask the user to listen. |
 | Final edit | ffmpeg | `roles/editor.md`, "No-code handoff": an edit list the user assembles in CapCut, iMovie, Premiere, or DaVinci Resolve. |
 
-Everything else (interview, bible, script, shot list, voice lines,
+Everything else (kickoff, bible, script, shot list, voice lines,
 sheets, keyframes, clips, QA by checklist) works without code.

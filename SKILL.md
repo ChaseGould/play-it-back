@@ -1,6 +1,6 @@
 ---
 name: play-it-back
-description: Produce a short AI video end to end (music video, ad or promo, narrated story, character cartoon, or anything custom) with the Higgsfield MCP server for images, video, and voice. Interviews the user first, picks a format profile, then runs a gated pipeline (brief, script and shot list, voice, reference sheets, keyframes, clips, edit) with a QA check and a user approval after every stage and a hard credit budget. Works with subagents where the tool has them (Claude Code, Codex) and runs the same roles in sequence where it does not (claude.ai, ChatGPT). Use when someone asks to make, plan, or continue an AI-generated video, music video, ad, animated short, or cartoon episode.
+description: Produce a short AI video end to end (music video, ad or promo, narrated story, character cartoon, or anything custom) with the Higgsfield MCP server for images, video, and voice. Starts by studying whatever the user sends (songs, photos, videos, notes) and pitching directions, asks only what's missing, picks a format profile, then runs a gated pipeline (brief, script and shot list, voice, reference sheets, keyframes, clips, edit) with a QA check and a user approval after every stage and a hard credit budget. Works with subagents where the tool has them (Claude Code, Codex) and runs the same roles in sequence where it does not (claude.ai, ChatGPT). Use when someone asks to make, plan, or continue an AI-generated video, music video, ad, animated short, or cartoon episode.
 ---
 
 # Play It Back: AI video studio
@@ -81,16 +81,19 @@ Check once at the start and say which mode you are in.
    generation tool (not in ChatGPT as of October 2026), and how do user
    files reach Higgsfield (an upload tool or an upload window; in some
    apps the assistant can't read files attached to the chat)? Tell the
-   user about any gap before the interview, since it changes what the
-   video can include.
+   user about any gap at kickoff, since it changes what the video can
+   include.
 3. Create the project folder from `templates/` (ask where; default
    `video-projects/<slug>/`): `brief.md`, `status.md`, and the stage
    folders listed in `templates/status.md`.
 
-## Step 1: Interview
-Read `references/interview.md` and `references/rights.md` and run the
-interview, including the rights check on every supplied asset. It asks
-a short set of questions, then names the closest format profile:
+## Step 1: Kickoff (look first, pitch, then ask)
+Read `references/kickoff.md` and `references/rights.md` and run the
+kickoff. Don't open with a list of questions: invite the user to send
+whatever they have, study all of it, pitch two or three directions
+built from it, and only then ask what's still missing (rights for every
+asset you'll use, and the budget cap, are always required). The chosen
+pitch names the closest format profile:
 
 | Profile | File | Evidence |
 |---|---|---|
@@ -101,8 +104,9 @@ a short set of questions, then names the closest format profile:
 | Custom | `references/profiles/custom.md` | for anything else |
 
 Tell the user which profile you picked and why in one or two sentences,
-and let them change it. Write the answers, the profile, the budget cap,
-and the approval mode into `brief.md` and `status.md`.
+and let them change it. Write what you saw, the chosen pitch, the
+profile, the budget cap, and the approval mode into `brief.md` and
+`status.md`.
 
 ## Step 2: Run the pipeline
 Stage order (the profile can mark a stage `n/a` or add one). Playbooks
