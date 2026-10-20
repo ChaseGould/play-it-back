@@ -6,8 +6,11 @@ copy, and nobody should ever paste a key or token into the chat.
 
 Server URL: `https://mcp.higgsfield.ai/mcp`
 
-1. Make a Higgsfield account at higgsfield.ai and get some credits (a
-   paid plan or a credit pack). Video needs a paid plan for some models.
+1. Make a Higgsfield account at higgsfield.ai. Using it from an AI app
+   needs an active paid Higgsfield plan, and every generation spends
+   credits. Higgsfield has no spending cap of its own; the project
+   budget is a rule the assistant follows, and the only hard limit is
+   the credits on the account.
 2. Connect it in the app you're using:
 
 **Claude Code** (terminal or the desktop app's Code tab)
@@ -22,11 +25,16 @@ Server URL: `https://mcp.higgsfield.ai/mcp`
 - Turn the connector on in the chat (the tools menu) before starting.
 
 **ChatGPT**
-- Higgsfield has an official ChatGPT plugin. Install it from
-  `chatgpt.com/plugins/higgsfield` and sign in, then mention
-  `@Higgsfield` in the chat.
-- If that isn't available on your plan, ChatGPT's developer mode can
-  add a custom connector with the URL above.
+- Go to higgsfield.ai/mcp and click Add Higgsfield plugin, or open the
+  Plugins directory in ChatGPT and find Higgsfield. Click Add, then sign
+  in to Higgsfield and authorize.
+- Only add Higgsfield from Higgsfield's site or ChatGPT's directory; a
+  connector with any other URL is not Higgsfield.
+- In the chat, ChatGPT uses the plugin when it fits, or type
+  `@Higgsfield`.
+- Limits in ChatGPT (Higgsfield help center, October 2026): no audio or
+  voice generation, and the assistant can't read images attached to the
+  chat, so photos and logos go in through the Higgsfield upload window.
 
 **Codex (OpenAI's coding agent)**
 - Add to `~/.codex/config.toml`:

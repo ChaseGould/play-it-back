@@ -4,7 +4,9 @@
 - List the server's image models, get free quotes, and pick the cheapest
   that holds the look in `bible/style.md`. Test one image first if the
   model is new.
-- Upload the user's photos as references when a subject is real.
+- Upload the user's photos as references when a subject is real. If you
+  can't read files attached to the chat (ChatGPT), open Higgsfield's
+  upload window and have the user add them there.
 
 ## Pass 1: reference sheets (4a)
 - One sheet per recurring subject: turnaround (front, side, back,

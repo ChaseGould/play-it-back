@@ -3,6 +3,12 @@
 Skip this stage when the profile has no generated voice (for example a
 music video with only the song).
 
+If the connection has no voice generation tool (Higgsfield in ChatGPT,
+as of October 2026), offer the user: record the voiceover themselves
+(a phone voice memo is fine) and send it, tell the story with on-screen
+text instead, or switch to an app that has voice. Then cut shots to
+their recording's real timing.
+
 ## Voice design (first project, or a new recurring voice)
 1. List the generation server's voice tools and preset voices. Some
    servers cannot design a voice from a text description; then you

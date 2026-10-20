@@ -77,7 +77,13 @@ Check once at the start and say which mode you are in.
 1. Confirm a Higgsfield tool is available and signed in: call a
    read-only tool such as the balance or model list. If it fails, follow
    `references/setup-higgsfield.md` and stop until it works.
-2. Create the project folder from `templates/` (ask where; default
+2. Note what this connection can do: is there a voice or audio
+   generation tool (not in ChatGPT as of October 2026), and how do user
+   files reach Higgsfield (an upload tool or an upload window; in some
+   apps the assistant can't read files attached to the chat)? Tell the
+   user about any gap before the interview, since it changes what the
+   video can include.
+3. Create the project folder from `templates/` (ask where; default
    `video-projects/<slug>/`): `brief.md`, `status.md`, and the stage
    folders listed in `templates/status.md`.
 
