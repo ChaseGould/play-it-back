@@ -1,99 +1,93 @@
 # Play It Back
 
-An AI video studio in a skill. Tell your AI assistant what you want (a
-music video for your song, a 30 second ad, a narrated story about your
-car, a cartoon) and it runs the whole production with you: interview,
-script and shot list, voice, reference images, keyframes, video clips,
-and the final edit.
+Make a music video, an ad, a story video, or a cartoon by just telling
+Claude what you want. It plans it with you, asks before spending
+anything, and shows you each step.
 
-It's built for Claude and ChatGPT, and makes images, video, and voice
-through the Higgsfield MCP server on your own Higgsfield account.
+## Set it up (about 3 minutes)
 
-How it works:
-- **Interview first.** About ten questions, then it picks the closest
-  format: music video, ad or promo, narrated short, character cartoon,
-  or custom.
-- **You approve every stage.** After each stage it runs a QA check,
-  shows you what it made and what it cost, and waits for your OK or
-  your notes.
-- **Hard budget.** You set a credit cap before anything is generated.
-  It never goes past the cap and stops to ask at 80%.
-- **Cheap by design.** Every shot is tagged still, loop, or animated,
-  and only the shots that need real motion become video. One 2:37
-  narrated episode cost 110 credits this way.
+You need a [Claude](https://claude.ai) account and a
+[Higgsfield](https://higgsfield.ai) account with some credits.
+Higgsfield makes the pictures, voices, and video, on your own account.
 
-## 1. Connect Higgsfield (your own account)
+**1. Download the skill**
 
-You need a Higgsfield account with credits (higgsfield.ai). Sign-in
-happens in your browser. There is no API key to copy, and the skill
-will never ask you for one.
+[Download play-it-back.zip](https://github.com/ChaseGould/play-it-back/releases/latest/download/play-it-back.zip)
+(don't unzip it)
 
-Server URL: `https://mcp.higgsfield.ai/mcp`
+**2. Add it to Claude**
 
-| App | How to connect |
-|---|---|
-| Claude Code | `claude mcp add --scope user --transport http higgsfield https://mcp.higgsfield.ai/mcp`, then run `/mcp` in a session, pick `higgsfield`, and sign in |
-| claude.ai or Claude Desktop | Settings, Connectors, Add custom connector, paste the URL, Connect, sign in. Turn it on in the chat's tools menu |
-| ChatGPT | Install the official Higgsfield plugin at chatgpt.com/plugins/higgsfield and sign in, or add a custom connector with the URL in developer mode |
-| Codex | Add `[mcp_servers.higgsfield]` with `url = "https://mcp.higgsfield.ai/mcp"` to `~/.codex/config.toml`, then run `codex mcp login higgsfield` |
+In Claude, go to **Settings**, then **Capabilities**, then **Skills**.
+Click **Upload skill** and pick the file you just downloaded.
 
-Check it worked: ask "what's my Higgsfield credit balance?". More detail
-and troubleshooting: [references/setup-higgsfield.md](references/setup-higgsfield.md).
+**3. Connect Higgsfield**
 
-## 2. Install the skill
+In Claude, go to **Settings**, then **Connectors**, then **Add custom
+connector**.
+- Name: `Higgsfield`
+- URL: `https://mcp.higgsfield.ai/mcp`
 
-**Claude Code**
+Click **Connect** and sign in to Higgsfield. You'll never need to copy
+a password or key into the chat.
+
+**4. Make something**
+
+Start a new chat and say what you want. Attach your song, photos, or
+logo if you have them. For example:
+
+> Make a music video for this song. Moody, neon, my character walking
+> through a city at night.
+
+> Help me make a 30 second ad for my coffee truck.
+
+Claude asks you some questions, asks how many credits you want to
+spend at most, and checks with you after every step.
+
+Menu names change sometimes. If a button isn't exactly where this says,
+look for the closest match.
+
+## Good to know
+
+- **Cost:** you pay Higgsfield in credits. Videos that are mostly still
+  pictures cost much less than all-video ones. You set the limit, and it
+  never goes over.
+- **The final edit:** in the Claude app, you get a simple shot-by-shot
+  list to put together in CapCut or any video editor. (Claude Code can
+  do the edit for you.)
+- **Music and photos:** use songs and photos you have the right to use.
+  Claude will ask.
+
+## Using ChatGPT instead
+
+If your ChatGPT plan has skills, upload the same file there. To connect
+Higgsfield, install the Higgsfield plugin at
+chatgpt.com/plugins/higgsfield and sign in. Then use it the same way.
+
+---
+
+## For developers
+
+This repo is the skill folder itself.
+
+**Claude Code** (or just ask Claude Code to "install the skill from
+github.com/ChaseGould/play-it-back and connect the Higgsfield MCP
+server"):
 ```bash
 git clone https://github.com/ChaseGould/play-it-back ~/.claude/skills/play-it-back
 ```
-
-**Codex**
 ```bash
-git clone https://github.com/ChaseGould/play-it-back ~/.codex/skills/play-it-back
+claude mcp add --scope user --transport http higgsfield https://mcp.higgsfield.ai/mcp
 ```
+Then run `/mcp` in a session, pick `higgsfield`, and sign in. Claude
+Code runs each role as a subagent and does the final edit itself
+(needs ffmpeg).
 
-Update later with `git pull` inside that folder.
+**Codex:** clone into `~/.codex/skills/play-it-back`, add
+`[mcp_servers.higgsfield]` with `url = "https://mcp.higgsfield.ai/mcp"`
+to `~/.codex/config.toml`, then `codex mcp login higgsfield`.
 
-**claude.ai:** download this repo as a ZIP (green Code button, Download
-ZIP), then upload it under Settings, Capabilities, Skills.
-
-**ChatGPT:** if your plan supports skills, upload the ZIP. If not, make
-a Project, paste `SKILL.md` into the project instructions, and add the
-`references/` and `templates/` files to the project.
-
-Menu names change often; use the closest current label.
-
-## 3. Use it
-
-Start a new chat (in Claude Code, open it in an empty folder) and say
-what you want, attaching your song, photos, or logo if you have them:
-
-> Make a music video for this song. Moody, neon, mostly my character
-> walking through a city at night.
-
-> Help me make a 30 second vertical ad for my coffee truck.
-
-It checks your Higgsfield connection, interviews you, asks for a
-budget, and goes from there.
-
-## What works where
-
-| | Claude Code, Codex | claude.ai, ChatGPT |
-|---|---|---|
-| Interview, script, shot list | yes | yes |
-| Voice, images, video clips | yes | yes |
-| Subagents per role | yes | no, one assistant plays every role in turn |
-| Lip sync, audio splicing, frame checks | yes (needs ffmpeg) | limited, see [references/no-code.md](references/no-code.md) |
-| Final edit | yes (needs ffmpeg) | you get a shot-by-shot edit list to assemble in CapCut or any editor |
-
-## Costs
-
-You pay Higgsfield directly in credits. Video is most of the spend: a
-mostly-stills video can run tens of credits for a minute or more, while
-30 seconds of all-video clips can run several hundred. Prices change;
-the skill quotes every generation before running it.
-
-## Formats
+More detail: [references/setup-higgsfield.md](references/setup-higgsfield.md)
+and, for apps that can't run code, [references/no-code.md](references/no-code.md).
 
 | Format | Status |
 |---|---|
@@ -102,6 +96,3 @@ the skill quotes every generation before running it.
 | Character cartoon | Proven on a finished episode, includes kids rules |
 | Ad or promo | Untested, built from the others |
 | Custom | Built with you from the interview |
-
-Each format file has a "Lessons from use" section that grows as
-projects finish.
