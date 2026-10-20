@@ -1,6 +1,6 @@
 ---
 name: play-it-back
-description: Produce a short AI video end to end (music video, ad or promo, narrated story, character cartoon, or anything custom) with the Higgsfield MCP server for images, video, and voice. Starts by studying whatever the user sends (songs, photos, videos, notes) and pitching directions, asks only what's missing, picks a format profile, then runs a gated pipeline (brief, script and shot list, voice, reference sheets, keyframes, clips, edit) with a QA check and a user approval after every stage and a hard credit budget. Works with subagents where the tool has them (Claude Code, Codex) and runs the same roles in sequence where it does not (claude.ai, ChatGPT). Use when someone asks to make, plan, or continue an AI-generated video, music video, ad, animated short, or cartoon episode.
+description: Produce a short AI video end to end (music video, ad or promo, narrated story, character cartoon, or anything custom) with the Higgsfield MCP server for images, video, and voice. Starts by asking what the user is picturing and studying whatever they send (songs, photos, videos, notes), pitches directions built on their idea, asks only what's missing, picks a format profile, then runs a gated pipeline (brief, script and shot list, voice, reference sheets, keyframes, clips, edit) with a QA check and a user approval after every stage and a hard credit budget. Works with subagents where the tool has them (Claude Code, Codex) and runs the same roles in sequence where it does not (claude.ai, ChatGPT). Use when someone asks to make, plan, or continue an AI-generated video, music video, ad, animated short, or cartoon episode.
 ---
 
 # Play It Back: AI video studio
@@ -87,13 +87,14 @@ Check once at the start and say which mode you are in.
    `video-projects/<slug>/`): `brief.md`, `status.md`, and the stage
    folders listed in `templates/status.md`.
 
-## Step 1: Kickoff (look first, pitch, then ask)
+## Step 1: Kickoff (their direction, their material, your pitch)
 Read `references/kickoff.md` and `references/rights.md` and run the
-kickoff. Don't open with a list of questions: invite the user to send
-whatever they have, study all of it, pitch two or three directions
-built from it, and only then ask what's still missing (rights for every
-asset you'll use, and the budget cap, are always required). The chosen
-pitch names the closest format profile:
+kickoff. Don't open with a list of questions, and don't decide the
+direction from the files alone: ask what they're picturing and invite
+them to send whatever they have, study all of it, pitch two or three
+directions that start from their idea, and only then ask what's still
+missing (rights for every asset you'll use, and the budget cap, are
+always required). The chosen pitch names the closest format profile:
 
 | Profile | File | Evidence |
 |---|---|---|

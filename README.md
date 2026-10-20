@@ -1,9 +1,9 @@
 # Play It Back
 
 Make a music video, an ad, a story video, or a cartoon with Claude or
-ChatGPT. Drop in your songs, photos, or videos, and it pitches ideas
-built from them, asks before spending anything, and shows you each
-step.
+ChatGPT. Tell it what you're picturing, drop in your songs, photos, or
+videos, and it pitches ideas built on yours, asks before spending
+anything, and shows you each step.
 
 You need a paid [Higgsfield](https://higgsfield.ai) plan with some
 credits. Higgsfield makes the pictures, voices, and video, on your own
@@ -37,19 +37,21 @@ a password or key into the chat.
 
 **4. Make something**
 
-Start a new chat and drop in whatever you've got: songs, photos,
-videos, voice memos, a logo, a few words. You don't need a plan. For
-example:
+Start a new chat, say what you're picturing (even roughly), and drop
+in whatever you've got: songs, photos, videos, voice memos, a logo.
+For example:
 
-> Here's my song and some photos of my car. What could we make?
+> Make a music video for this song. Moody, neon, kind of lonely.
 
-> Make a music video for this song. Moody, neon.
+> Here's a song and some photos of my car. I want something funny,
+> like a fake documentary about it.
 
 > Help me make a 30 second ad for my coffee truck.
 
-Claude looks through everything, pitches you a few ideas built from
-it, and asks only what it still needs, including how many credits
-you want to spend at most. Then it checks with you after every step.
+If you just send files, Claude will ask what you have in mind first.
+Then it looks through everything, pitches a few ideas built on yours,
+and asks only what it still needs, including how many credits you
+want to spend at most. After that it checks with you after every step.
 
 Menu names change sometimes. If a button isn't exactly where this says,
 look for the closest match.

@@ -1,14 +1,24 @@
-# Kickoff: look first, pitch, then ask
+# Kickoff: their direction, their material, then your pitch
 
-Don't open with a questionnaire. The most useful start is the user
-dropping in whatever they have and you coming back with a direction.
-Ask only what their material and your pitch don't already answer.
+Don't open with a questionnaire, and don't guess the direction from the
+files alone. Ask what they're picturing, look at everything they sent,
+then pitch directions that start from their idea. Ask only what's still
+unanswered after that.
 
-## 1. Invite the material
-Open with one short message, something like: "Send me whatever you've
-got: a song, voice memos, photos, videos, a logo, a story, a few words
-about the vibe. I'll look through it and pitch you some directions."
-If they only have an idea in words, that's fine; go straight to step 3.
+## 1. Ask for their direction and their material
+Open with one short message that asks both, something like: "What are
+you picturing, even roughly? What's it for, what should it feel like,
+anything you've seen that you'd want it to be like? And send me
+whatever you've got: a song, voice memos, photos, videos, a logo, a
+story. I'll look through it and pitch you some directions."
+
+- If they already said what they want, don't ask again; confirm it in a
+  line and move on.
+- If they sent files with no direction, still ask what they have in
+  mind before pitching. One open question is enough.
+- If they genuinely have no idea ("you tell me"), that's fine: pitch
+  from the material alone in step 3.
+- If they have an idea but no files, skip step 2.
 
 ## 2. Study everything they sent
 Look at every file before saying anything else.
@@ -27,8 +37,14 @@ Write a short "what I see" note in `brief.md`: each asset, one line
 each, plus anything that stood out.
 
 ## 3. Pitch two or three directions
+Their direction comes first. The first pitch is their idea, made
+concrete with their material and done as well as possible. The others
+are variations on it (a different tone, format, or angle you think
+could land better), not unrelated ideas. Only when they had no direction
+are all the pitches your own.
+
 Each pitch, a few lines:
-- a title and one-sentence premise built from their material
+- a title and one-sentence premise built from their idea and material
 - the format (profile) and why
 - the look in a few words
 - how timing works (to the song, to a narration, to a fixed ad length)
@@ -37,10 +53,10 @@ Each pitch, a few lines:
   took 530 to 630)
 - one line on what would need to be true (rights, consent, a voice)
 
-Make them genuinely different (for example deadpan documentary vs neon
-music video vs mock commercial), lead with the one you'd pick, and say
-why. The user can pick one, mix them, or redirect. Iterate until they
-like a direction.
+Make the variations genuinely different (for example deadpan
+documentary vs neon music video vs mock commercial). Say which one you'd
+pick and why, without overriding what they asked for. The user can pick
+one, mix them, or redirect. Iterate until they like a direction.
 
 ## 4. Fill only the gaps
 Once a direction is picked, ask only what's still unknown, a couple of
